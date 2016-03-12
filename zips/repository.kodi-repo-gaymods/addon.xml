@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.kodi-repo-gaymods" name="Gay Mods of KODI addons various sources ie agx" version="0.0.1" provider-name="kodi-repo-gaymods">
+        <extension point="xbmc.addon.repository" name="Kodi Repo Gay Mods">
+                <info compressed="false">https://raw.githubusercontent.com/moedje/kodi-repo-gaymods/master/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/moedje/kodi-repo-gaymods/master/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/moedje/kodi-repo-gaymods/master/</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <summary>Kodi Addons with tweaks to help get gay oriented content from many various sources and plugins. fork originally by agx</summary>
+                <description>Addons by antigenx, xbmcadult, and others with gaymods by moedje</description>
+                <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+                <platform>all</platform>
+        </extension>
+</addon>
