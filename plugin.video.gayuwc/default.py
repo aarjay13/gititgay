@@ -100,6 +100,8 @@ def INDEXT():
     utils.addDir('[COLOR hotpink]TubePornClassic[/COLOR]','http://www.tubepornclassic.com/latest-updates/',360,os.path.join(imgDir, 'tubepornclassic.png'),'')
     utils.addDir('[COLOR hotpink]HClips[/COLOR]','http://www.hclips.com/latest-updates/',380,os.path.join(imgDir, 'hclips.png'),'')
     utils.addDir('[COLOR hotpink]PornHub[/COLOR]','http://www.pornhub.com/newest.html',390,os.path.join(imgDir, 'pornhub.png'),'')
+    utils.addDir('[COLOR hotpink]PornHub[/COLOR] [COLOR red]Gay[/COLOR]','http://www.pornhub.com/gay/video',390,os.path.join(imgDir, 'pornhub.png'),'')
+    utils.addDir('[COLOR hotpink]Porndig[/COLOR] [COLOR red]Gay[/COLOR]','http://www.porndig.com/gay',290,os.path.join(imgDir, 'porndig.png'),'')
     utils.addDir('[COLOR hotpink]Porndig[/COLOR] [COLOR white]Professional[/COLOR]','http://www.porndig.com',290,os.path.join(imgDir, 'porndig.png'),'')
     utils.addDir('[COLOR hotpink]Porndig[/COLOR] [COLOR white]Amateurs[/COLOR]','http://www.porndig.com',290,os.path.join(imgDir, 'porndig.png'),'')
     utils.addDir('[COLOR hotpink]AbsoluPorn[/COLOR]','http://www.absoluporn.com/en/',300,os.path.join(imgDir, 'absoluporn.gif'),'')
@@ -114,7 +116,8 @@ def INDEXW():
     xbmcplugin.endOfDirectory(utils.addon_handle)
     
 def STREAMS():
-    streamurl = 'https://github.com/whitecream01/WhiteCream-V0.0.1/raw/master/plugin.video.uwc/streamlist.m3u'
+    streamurl = 'https://raw.githubusercontent.com/kodirepo/GayShowBox-v0.0.1/master/plugin.video.uwc/streamlist.m3u'
+    #streamurl = 'https://github.com/whitecream01/WhiteCream-V0.0.1/raw/master/plugin.video.uwc/streamlist.m3u'
     streamlist = utils.getHtml(streamurl, '')
     match = re.compile('#.+,(.+?)\n(.+?)\n').findall(streamlist)
     for name, url in match:
