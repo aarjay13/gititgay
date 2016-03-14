@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.dagay"
        name="DaGay"
-       version="1.1.2"
-       provider-name="moedje">
+       version="2.0.0"
+       provider-name="kodi-repo-gaymods">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
     </requires>
@@ -11,7 +11,7 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>Dagay.com/Deviantclip Porn Videos (Adult 18+)</summary>
+        <summary>Gaymods Repo Dagay.com/Deviantclip Porn Videos (Adult 18+)</summary>
         <description>DaGay has Gay Porn or Deviantclip has Str8 set which you want in settings. Modified from the
             plugin.video.dclip will combine the 6 pages of video results into one result screen and set Thumbs view
         </description>
