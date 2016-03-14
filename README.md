@@ -1,40 +1,45 @@
-## kodi-repo-gaymods
-### Gaymods Repo: An Adult addon repository for Gay Video Addons for Kodi *(Jarvis 16.0+)* ~~XBMC~~
+## repository.gaymods
+###  A Collection of Gay Adult addons for ~~XBMC~~ Kodi *(Jarvis 16.0+)* all in one place 
 Intended to be the one stop place for the latest addons and most up to date code for addons that will display gay content from adult websites typically forked addons already written for many straight sites but modified slightly to filter out content that is not GAY 
-#### PLUGIN STATUS
+#### STATUS OF PLUGINS
 *updated 13 March 2016*
 
 - [x] plugin.video.gayuwc (*__status:__ See below for more details on areas I could use help with such as porndig.py* 14/3/16)
-- [ ] plugin.video.xstream (*__status:__ I had modified the gstream.to file to filter the gay/tranny section but I think the site has been blocked as it stopped working so this may be removed soon* 14/3/16)
+- [x] plugin.video.gayboystube (*__status:__ Worked with Latest Videos, or Random have added categories, sorting, and searching * 14/3/16)
+- [x] plugin.video.dagay (*__status:__ Uses the dclip code to run as they are from the same company * 14/3/16)
+- [x] plugin.video.largecamtube (*__status:__ Sorted categories that are gay to top and any category attempts to sort the videos in that category by gay ones at top of list * 14/3/16)
+- [x] plugin.video.gaypornium (*__status:__ Worked with Latest Videos, or Random have added categories, sorting, and searching * 14/3/16)
+- [x] plugin.video.dclip (*__status:__ DevientClip has a small set of sites all with same templates so scraping the gay site was as easy as setting it to the URL and it just worked which spawned the video.DaGay plugin but I left options in the dclip addon to set gay or straight so it essentially can be all put together one day * 14/3/16)
+- [ ] plugin.video.oxo (*__status:__ Not Started * 14/3/16)
+- [ ] plugin.video.xhamstergay (*__status:__ Not Started From XBMCADULT repo lacks functionality and fails to return items * 14/3/16)
+- [ ] plugin.video.youporngay (*__status:__ Not Started From XBMCADULT repo lacks functionality and fails to return items * 14/3/16)
+- [ ] plugin.video.youjizzgay (*__status:__ Not Started From XBMCADULT repo lacks functionality and fails to return items * 14/3/16)
 - [ ] plugin.video.motherless (*__status:__ Not started * 14/3/16)
-- [x] plugin.video.gayboystube (*__status:__ *)
-- [x] plugin.video.dagay (*__status:__ *)
-- [x] plugin.video.largecamtube (*__status:__ *)
-- [x] plugin.video.gaypornium (*__status:__ *)
-- [x] plugin.video.dclip (*__status:__ *)
-- [x] plugin.video.oxo (*__status:__ *)
+- [ ] plugin.video.xstream (*__status:__ I had modified the gstream.to file to filter the gay/tranny section but I think the site has been blocked as it stopped working so this may be removed soon I have instead used UWC's Pornhive and Paradisehill Plugins much to the same results as I had from gstream when it worked * 14/3/16)
 
 ## Latest News
 _(updated 13 March 2016)_
 
-I am working on fixing the modifications I have made to addons for gay content filtering or the feature improvements to the GayBoysTube, GayPornium, and a forked version of the devientclip addon to scrape their gay site, DaGay, on here and tested on Jarvis and install and run correctly if installed from this repository. I had these individually working locally as zip files but they aren't working or installing via this repo (which is the first repository I have attempted and my python is getting better but been a case of learning by doing for the past year)
-All that said as I had about 5 addons working on Jarvis RC's after taking a break from stuff for the past couple months and trying to move them into a repo instead of just standalone zip files seems to have broken something but likely a minor problem that I hope to solve shortly and distinguish the addons that I believe to be working at the top of this page and in the changelogs/addons details
+- I am working on fixing the modifications I have made to addons for gay content filtering or the feature improvements to the GayBoysTube, GayPornium, and a forked version of the devientclip addon to scrape their gay site, DaGay, on here and tested on Jarvis and install and run correctly if installed from this repository. I had these individually working locally as zip files but they aren't working or installing via this repo (which is the first repository I have attempted and my python is getting better but been a case of learning by doing for the past year)
+- All that said as I had about 5 addons working on Jarvis RC's after taking a break from stuff for the past couple months and trying to move them into a repo instead of just standalone zip files seems to have broken something but likely a minor problem that I hope to solve shortly and distinguish the addons that I believe to be working at the top of this page and in the changelogs/addons details
 Some additional minor tweaks to python code / updates for Jarvis have been made to some addons as well.
 
 ## Goals and Intentions
-I ultimately wanted to try and centralize gay video addons into one repo which I would happily see branch off the wonderful XBMCADULT repo which could allow installing the Gay XBMCADULT repo from their main repo, also allowing the few gay specific plugins already in that repo like xHamsterGay and others (many of which don't fully work, or lack functionality) and remove them from the main repo and move to the Gay XBMCADULT repo instead. Whether this ever would happen or not isn't important to me, but what is will be having a centralized repo that users and developers can find gay adult oriented addons. I hope that by putting them all in one spot with more updated code and additional functionality will encourage others to contribute other adult addons that are simple to modify to grab gay content to this central spot. I also hope that the code changes and standards could be pushed back to the original repo's hosting them so everyone can benefit from user to developers by building off these code updates. Or possibly removing the older versions from their repo and add this repo's installer keeping one main repo for forks of all the gay addons. Hopefully this can lead to fixing up broken addons, standardizing settings, and a more extensive selection of gay addons and keep up with how many str8 addons are around. 
-- Repository for Kodi (XBMC) Video Addons for Gay XXX 18+ mainly existing Addons from other adult repos but ones that lacked any GAY category/filtering of video's from the straight ones focusing on plugins for sites that contain gay content and require only minor code additions to display either gay or straight results depending on the selected addon's filter setting.
-- I also have included existing gay plugins from AGX, XBMCADULT, and other REPO's some of which haven't worked for a while, other's such as the GayBoysTube addon worked fine for basic display of new videos, and random, and just need some additional functionality added to them like Category's, Search and last search, Download context Menu actions, and sorting options.
-- My first goals are to have the addons already working that are gay specific or have gay categories already, copied to this repo
-- I wrote very little of the code found here. Praise to authors of the original code base I simply used based python knowledge to make sure gay content was being scraped, and was seperated from str8 results/tranny categories. Most of the changes are simple a long IF statement to find some keywords and to not add results containing other clearly str8 female results.
-- All of this is a work in progress some I still have errors and no results. This is my first attempt at a proper repo and not just some little code changes so please understand and help where you see any errors!
-- I hope that many of these addons could be merged back in with their original code one day and simply have a gay/straight/keywords settings included with each of the addons settings.xml and if settingGay is True then the small code changes/standard filter functions are executed before items get added to an xbmc directory list.
-- For now I am just trying to get as many of these addons in one place and renamed so that these code changes can be added and tested and all in one repo as xbmcadult repo has many in various states, UWC, PODGOD, the UWC repo I would like to raise some major issues with later!
+- I ultimately wanted to try and centralize gay video addons into one repo which I would happily see branch off the wonderful XBMCADULT repo which could allow installing the Gay XBMCADULT repo from their main repo, also allowing the few gay specific plugins already in that repo like xHamsterGay and others (many of which don't fully work, or lack functionality) and remove them from the main repo and move to the Gay XBMCADULT repo instead. Whether this ever would happen or not isn't important to me, but what is will be having a centralized repo that users and developers can find gay adult oriented addons. I hope that by putting them all in one spot with more updated code and additional functionality will encourage others to contribute other adult addons that are simple to modify to grab gay content to this central spot. I also hope that the code changes and standards could be pushed back to the original repo's hosting them so everyone can benefit from user to developers by building off these code updates. Or possibly removing the older versions from their repo and add this repo's installer keeping one main repo for forks of all the gay addons. Hopefully this can lead to fixing up broken addons, standardizing settings, and a more extensive selection of gay addons and keep up with how many str8 addons are around. 
+- All of this is a work in progress and attempt to get a full list and status together which is why plugins have been hard forked until the status of them can be determined. 
+- This is my first attempt at a proper repo and I am not the best python programmer so all help is welcome.
+- I will work on tracing the origins of plugins to repo's and authors along the way and update this info in the status of these addons but very little of the code is written by me I have simply tried to add functions and fixes to already existing addons written by other's who I thank and hope will be interested in the changes I have implemented. 
+- Creating hard forks of any existing Gay addons from any repo I have found them on and in working and non working states to get a complete picture of what needs fixing, what needs functionality additions, and what works fine already and listing those statuses so everyone can see what still needs fixing and hopefully help.
+- Some of the repo's that I found gay plugins in are PODGOD, AGX, XBMCADULT, I will try to get a better list together soon. 
+- Once a plugin runs and has the standardized functions and settings included the status can be updated on the repo, changelog, and in the addons.xml metadata then I would hope to submit it back to original repository for updating and/or adding this repo so that users can keep updated versions.
+- Many plugins should be able to function as str8 or gay with the user being able to set this in settings, I hope that pushing code updates to some of the existing adult repo's with a sexual orientation setting of BOOL settingGay could become more prevelent in all adult plugins so everyone can benefit from developers hard work on these addons not just those seeking straight porn. 
+- Ugly filters could be more easily added to plugins in the xbmc.addDirectoryItem() by calling a simple in between function call if the settingGay is True then run the name of the item against a list of gay terms to see if any match and if they do return it to the addDirectoryItem otherwise next. Not an ideal solution but a quick dirty fix for sites lacking gay categories.
 
 ### CURRENT TODO
-- Add a resources folder for all addons with a generic settings.xml with standardized naming conventions
-- Implement in settings.xml for all addons a Gay Filter on BOOL, a Last Search TEXT, a list of sorting options for results
-- Implement standard python code for reading/setting the settings.xml from Addon, and a showSearch that will display the keyboard with the last search as read from settings as well as then updating that value on return.
+- Add a resources folder for all addons with a generic settings.xml and a set of standard settings and names
+- Gather a full list of addons, where they came from, the version they are hard forked from, if they are working, and suggested TODOs for them.
+- Make sure all addons have updated changelogs and metadata in their addon.xml to distinguish them from the version they were hard forked from so that merging them back to the original repo could be possible.
+- Implement a settings.xml for all addons full details below on field names so that the same python code can be used on each plugin to perform initial setting of variables and the same doSearch, doFilter, and other functions will require as little customization as possible from one plugin to another.
 - Implement a modified addDirectoryItem function that can check to see if GAY filter is on and add/filter out items based on that.
 - Implement a standard list of straight and gay keywords to be used by the filters if a site doesn't specifically have gay categories or if additional filtering of results is desired such as ones set by the user in the addons settings.
 
@@ -62,15 +67,20 @@ Python code would use xbmcaddon.Addon object's getSetting function to set variab
 		<setting id="settingFilteroper" label="Filter keywords by" values="Remove If Keyword Found|Show Only Results Matching a Keyword" default="Show Only Results Matching a Keyword" type="labelenum" visible="true" />
 	</category>
 </settings>
-
 ```
+- Implement standard python code for reading/setting these values which the user has set as well as functions to present a search keyboard with the last search as well as updating it after a search, filterItem to be called before an item is added using xbmc.addDirectoryItem if the settingNoFilter is False or the settingGay is True, etc..
 
 ### UWC UltimateWhiteCream now gayUWC
-Many of the sites don't have any gay content and the two movie plugins I found that have gay content have it bulked in as gay/tranny so I have written a quick ugly attempt to filter out shemale video's and just grab the Gay ones. 
+
+gayUWC was hard forked from uwc plugin V 1.0.95 many of the sites it uses have no gay content at all
+Pornhive and paradisehill have gay/tranny categories which I have attempted to filter in the python code for those sites but it is very ugly code and needs to think about pagination and retrieving more than one page at a time. 
 - pornhive.py
 - paradisehill.py
-#### TODO
-- porndig.py (*An argument is passed to the module called pdsection which is currently either Amateurs or Professional want to add Gay*)
+
+#### TODO: porndig.py
+- I am not sure what other plugins could be modified but I have seen that porndig has gay categories and even offers options of Pro or Amateur which it looks at on it's startup, so having it also check for Gay on startup is easy enough but I haven't been able to use the existing functions with the gay URLs and have it return any items but it should be an easy enough thing to accomplish for someone a bit more experienced at Python/Kodi/UWC's standard functions.  Below are my suggestions and URL's to the gay content on porndig.
+- porndig.py (default.py calls this module so by adding a third porndig choice to the default.py called Porndig Gay you could then update the below code to look for Gay in the name:
+
 ```
 if 'Amateurs' in name:
     addon.setSetting('pdsection', '1')
@@ -78,36 +88,30 @@ else:
     addon.setSetting('pdsection', '0')
 ```
 If the above code checked for Gay and set the pdsection setting to 2 then with a few additional tweaks to the module it should be able to use most of it's existing code to scrape the gay content on the following URLS:
+
 - http://www.porndig.com/gays
 - http://www.porndig.com/gay/videos/
 - http://www.porndig.com/gay/studios/
 - http://www.porndig.com/gay/pornstars/
-- Gay category's exist and all end in -gay such as http://www.porndig.com/channels/1045/amateur-gay
+- http://www.porndig.com/channels/1045/amateur-gay *Category url for gay content all ends with -gay as this url is an example of*
+
 I made attempts to make the modifications but failed to work which I think is down to not fully understanding the parameters to pass to the functions which put the full URL together so I think that I'm not setting a base url correctly or the channel number, etc so if anyone wants to try to implement this correctly would be great. I think starting with changing how the pdsection setting is set and adding a new entry to the default.py for Porndig Gay as follows:
+
 ```
 utils.addDir('[COLOR hotpink]Porndig[/COLOR] [COLOR white]Gay[/COLOR]','http://www.porndig.com/gay',290,os.path.join(imgDir, 'porndig.png'),'')
 utils.addDir('[COLOR hotpink]Porndig[/COLOR] [COLOR white]Professional[/COLOR]','http://www.porndig.com',290,os.path.join(imgDir, 'porndig.png'),'')
 utils.addDir('[COLOR hotpink]Porndig[/COLOR] [COLOR white]Amateurs[/COLOR]','http://www.porndig.com',290,os.path.join(imgDir, 'porndig.png'),'')
 ```
 Next if the porndig.py file looks for Gay in the name you will know the gay directory was selected but it's all the code after that checks the pdsection setting that I don't know how to make work with the above gay URLS
+
 ```
 if 'Amateurs' in name: addon.setSetting('pdsection', '1')
 elif 'Gay' in name: addon.setSetting('pdsection', '2')
 else: addon.setSetting('pdsection', '0')
 ```
-gayUWC was hard forked from uwc plugin V 1.0.95 
+This is where I haven't gotten past yet, need to handle anywhere pdsection is checked to now handle the gay option of 2 with the correct gay url's and parameters. 
 
- **TODO:** porndig has a lot of gay content and I would like to try to modify the UWC porndig.py to handle Gay as an option as it already looks for Professional or Amueture was selected but I haven't had much luck making it work by giving it the direct link  but I think I don't fully understand how the plugin builds it's URL's and parameters well enough so if anyone can get the porndig.py code to check whether the argument passed was not just Pro or Ameuture but also check for Gay and handle
-
-I have forked the latest version of UWC code and renamed the addon for the time being to plugin.video.gayuwc
-- This addon seems to be getting a load of updates and new sites and functionality added all the time.
-- The code is vast and unlike videodevil which attempts to sort of handle the scraping through it's own config/catcher/regex's the UWC leaves it to each sites functionality is a python file.
-- This is fine, and as a programmer I like this more as I can easily look at and change and fix problems I see with any of the UWC site python files without having to try and learn a cfg/catcher/regex format which also seems to be splintered among many different forks of video devil making it even worse as videodevil cfg/catcher/list files don't all work on dif versions as they atttempted to add new keywords, functions, etc.
-- My PROBLEM though is that UWC which is really cool has a real lack of any gay filtering ability, and when it does exist it tends to be gay/tranny.
-- I have found code that even went so far as to say if the result contained the word gay don't include it!
-- I REALLY would love to see a solution that wouldn't require constant comparing and modifying of the UWC files and try to get them on board with the simple suggested GAY boolean setting I set out above and start trying to get the site specific python files to check this gay boolean value and apply it where the site has a gay category. At the moment it's a real nightmare and shocking to see statements in code like if not name.startswith('gay'): add(name) without giving the user the option to say they want these gay options or perhaps only these. 
-
-# ABOUT ME
-- Jeremy j@alljer.com
-- [CryptoCoins.Com](http://www.cryptocoins.com/) Founder (HELP INVESTMENT NEEDED)
+## ABOUT ME
+- Author: Jeremy j@alljer.com
+- Founder: [CryptoCoins.Com](http://www.cryptocoins.com/) Physical CryptoCurrency Worth Holding Onto
 
