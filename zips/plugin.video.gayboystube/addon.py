@@ -12,8 +12,11 @@ import os, os.path
 import htmlentitydefs
 from urlparse import parse_qs
 from urllib import unquote_plus, basejoin
-from htmlentitydefs import name2codepoint as n2cp
-from xml.sax.saxutils import unescape
+try:
+    from htmlentitydefs import name2codepoint as n2cp
+    from xml.sax.saxutils import unescape
+except:
+    pass
 
 # xbmc hooks
 __addonid__ = "plugin.video.gayboystube"
@@ -124,7 +127,8 @@ def addListItem(name, url, mode, thimg, page="page1.html"):
     liz = xbmcgui.ListItem(label=name, label2=mode, iconImage=thimg, thumbnailImage=thimg, path=url)
     if mode == 'loadVideoList':
         liz = xbmcgui.ListItem(label=name, label2=mode, path=url, iconImage=thimg, thumbnailImage=thimg)
-    elif mode == 'scrapeVideoList':
+    elif mode == 'scrapeVideoList' or mode == 'scrapeVideoListCat':
+        mode = 'scrapeVideoList'
         liz = xbmcgui.ListItem(label=name, label2=mode, path=url, iconImage=thimg, thumbnailImage=thimg)
     elif mode == 'playVideo':
         liz = xbmcgui.ListItem(name, iconImage=thimg, thumbnailImage=thimg)
