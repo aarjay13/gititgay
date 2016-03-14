@@ -1,18 +1,18 @@
-# kodi-repo-gaymods
-Adult repo for Gay Specific Addons for Kodi _XBMC_ **(Jarvis 16.0+)** 
-
+## kodi-repo-gaymods
+### Gaymods Repo: An Adult addon repository for Gay Video Addons for Kodi *(Jarvis 16.0+)* ~~XBMC~~
 Intended to be the one stop place for the latest addons and most up to date code for addons that will display gay content from adult websites typically forked addons already written for many straight sites but modified slightly to filter out content that is not GAY 
-## WORKING ADDONS
-__(updated 13 March 2016)__
+#### PLUGIN STATUS
+*updated 13 March 2016*
 
-- plugin.video.gayuwc
-- plugin.video.dagay
-
-## BROKEN ADDONS 
-__(updated 13 March 2016)__
-
-- plugin.video.gayboystube
-- plugin.video.largecamtube
+- [x] plugin.video.gayuwc (*__status:__ See below for more details on areas I could use help with such as porndig.py* 14/3/16)
+- [ ] plugin.video.xstream (*__status:__ I had modified the gstream.to file to filter the gay/tranny section but I think the site has been blocked as it stopped working so this may be removed soon* 14/3/16)
+- [ ] plugin.video.motherless (*__status:__ Not started * 14/3/16)
+- [x] plugin.video.gayboystube (*__status:__ *)
+- [x] plugin.video.dagay (*__status:__ *)
+- [x] plugin.video.largecamtube (*__status:__ *)
+- [x] plugin.video.gaypornium (*__status:__ *)
+- [x] plugin.video.dclip (*__status:__ *)
+- [x] plugin.video.oxo (*__status:__ *)
 
 ## Latest News
 _(updated 13 March 2016)_
@@ -31,14 +31,14 @@ I ultimately wanted to try and centralize gay video addons into one repo which I
 - I hope that many of these addons could be merged back in with their original code one day and simply have a gay/straight/keywords settings included with each of the addons settings.xml and if settingGay is True then the small code changes/standard filter functions are executed before items get added to an xbmc directory list.
 - For now I am just trying to get as many of these addons in one place and renamed so that these code changes can be added and tested and all in one repo as xbmcadult repo has many in various states, UWC, PODGOD, the UWC repo I would like to raise some major issues with later!
 
-## CURRENT TODO
+### CURRENT TODO
 - Add a resources folder for all addons with a generic settings.xml with standardized naming conventions
 - Implement in settings.xml for all addons a Gay Filter on BOOL, a Last Search TEXT, a list of sorting options for results
 - Implement standard python code for reading/setting the settings.xml from Addon, and a showSearch that will display the keyboard with the last search as read from settings as well as then updating that value on return.
 - Implement a modified addDirectoryItem function that can check to see if GAY filter is on and add/filter out items based on that.
 - Implement a standard list of straight and gay keywords to be used by the filters if a site doesn't specifically have gay categories or if additional filtering of results is desired such as ones set by the user in the addons settings.
 
-## DEFAULT SETTINGS.XML
+#### DEFAULT SETTINGS.XML
 Suggested defaults for all addons which may or may not have code implemented for handling all settings initially but hope to have standard functions to make adding functionality to addons easy by just needing to know where to call the functions such as a startup, dosearch, dofilter in a function about to call addDirectoryItem, etc.
 Python code would use xbmcaddon.Addon object's getSetting function to set variables in setup routine such as dofiltergay = bool(unicode(Addon.getSetting(id='settingGay')))
 
@@ -51,7 +51,6 @@ Python code would use xbmcaddon.Addon object's getSetting function to set variab
 - settingFilteroper (LABELENUM|TEXT) "Remove Items That Contain Keywords" or "Show Only Items With Keywords"
 
 ```
-
 <settings>
 	<category label="General">
 		<setting id="settingGay" label="Gay Filter (Uncheck for Straight)" values="true" default="true" type="bool" visible="true" />	
@@ -66,7 +65,40 @@ Python code would use xbmcaddon.Addon object's getSetting function to set variab
 
 ```
 
-## UltimateWhiteCream now gayUWC
+### UWC UltimateWhiteCream now gayUWC
+Many of the sites don't have any gay content and the two movie plugins I found that have gay content have it bulked in as gay/tranny so I have written a quick ugly attempt to filter out shemale video's and just grab the Gay ones. 
+- pornhive.py
+- paradisehill.py
+#### TODO
+- porndig.py (*An argument is passed to the module called pdsection which is currently either Amateurs or Professional want to add Gay*)
+```
+if 'Amateurs' in name:
+    addon.setSetting('pdsection', '1')
+else:
+    addon.setSetting('pdsection', '0')
+```
+If the above code checked for Gay and set the pdsection setting to 2 then with a few additional tweaks to the module it should be able to use most of it's existing code to scrape the gay content on the following URLS:
+- http://www.porndig.com/gays
+- http://www.porndig.com/gay/videos/
+- http://www.porndig.com/gay/studios/
+- http://www.porndig.com/gay/pornstars/
+- Gay category's exist and all end in -gay such as http://www.porndig.com/channels/1045/amateur-gay
+I made attempts to make the modifications but failed to work which I think is down to not fully understanding the parameters to pass to the functions which put the full URL together so I think that I'm not setting a base url correctly or the channel number, etc so if anyone wants to try to implement this correctly would be great. I think starting with changing how the pdsection setting is set and adding a new entry to the default.py for Porndig Gay as follows:
+```
+utils.addDir('[COLOR hotpink]Porndig[/COLOR] [COLOR white]Gay[/COLOR]','http://www.porndig.com/gay',290,os.path.join(imgDir, 'porndig.png'),'')
+utils.addDir('[COLOR hotpink]Porndig[/COLOR] [COLOR white]Professional[/COLOR]','http://www.porndig.com',290,os.path.join(imgDir, 'porndig.png'),'')
+utils.addDir('[COLOR hotpink]Porndig[/COLOR] [COLOR white]Amateurs[/COLOR]','http://www.porndig.com',290,os.path.join(imgDir, 'porndig.png'),'')
+```
+Next if the porndig.py file looks for Gay in the name you will know the gay directory was selected but it's all the code after that checks the pdsection setting that I don't know how to make work with the above gay URLS
+```
+if 'Amateurs' in name: addon.setSetting('pdsection', '1')
+elif 'Gay' in name: addon.setSetting('pdsection', '2')
+else: addon.setSetting('pdsection', '0')
+```
+gayUWC was hard forked from uwc plugin V 1.0.95 
+
+ **TODO:** porndig has a lot of gay content and I would like to try to modify the UWC porndig.py to handle Gay as an option as it already looks for Professional or Amueture was selected but I haven't had much luck making it work by giving it the direct link  but I think I don't fully understand how the plugin builds it's URL's and parameters well enough so if anyone can get the porndig.py code to check whether the argument passed was not just Pro or Ameuture but also check for Gay and handle
+
 I have forked the latest version of UWC code and renamed the addon for the time being to plugin.video.gayuwc
 - This addon seems to be getting a load of updates and new sites and functionality added all the time.
 - The code is vast and unlike videodevil which attempts to sort of handle the scraping through it's own config/catcher/regex's the UWC leaves it to each sites functionality is a python file.
