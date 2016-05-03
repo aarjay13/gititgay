@@ -20,7 +20,10 @@ along with this program. If not, see <http://www.gnu.org/licenses/>
 import urllib, urllib2, re, os, sys
 import xbmc, xbmcplugin, xbmcgui, xbmcaddon
 
-
+sortBy = "recent"
+searchQ = ""
+viewMode = 500
+doPaginate = False
 mysettings = xbmcaddon.Addon(id = 'plugin.video.GayHideout')
 profile = mysettings.getAddonInfo('profile')
 home = mysettings.getAddonInfo('path')
@@ -38,6 +41,10 @@ except:
     searchQ = ""
     viewMode = 500
     doPaginate = False
+    mysettings.setSetting('sortby', sortBy)
+    mysettings.setSetting('lastsearch', searchQ)
+    mysettings.setSetting('viewmode', viewMode)
+    mysettings.setSetting('dopaginate', doPaginate)
 
 #define webpages in order they were added.
 redtube = 'http://www.redtube.com/redtube/gay'
@@ -96,11 +103,6 @@ def make_request(url):
 		elif hasattr(e, 'reason'):
 			print 'We failed to reach a server.'
 			print 'Reason: ', e.reason
-
-def setView():
-    #ok = xbmcplugin.endOfDirectory(thisPlugin)
-    xbmc.executebuiltin("Container.SetViewMode(%s)" % viewMode)
-    #return ok
 
 def home():
 	add_dir('...[COLOR yellow]  Home  [/COLOR]...', '', None, icon, fanart)
@@ -670,7 +672,7 @@ def start(url):
 			add_link(name + ' [COLOR lime]('+ duration + ')[/COLOR]', url , 4, thumb, fanart)
 		match = re.compile('</li>\s*<li><a data-page=".+?" href="(.+?)">.+?</a></li>\s*<li><a').findall(content)
 		add_dir('[COLOR blue]Next  Page  >>>>[/COLOR]', zbporn + match[0], 2, logos + 'zbporn.png', fanart)			
-	setview()
+	xbmc.executebuiltin("Container.SetViewMode(%s)" % viewMode)
 
 def pornhd_categories(url):
 	home()
