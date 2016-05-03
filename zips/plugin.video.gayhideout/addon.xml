@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.GayHideout" name="GayHideout" version="1.4.7" provider-name="kodi-repo-gaymods">
+    <requires>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>[COLOR red]GAY XXX[/COLOR] Porn (adulthideout fork)</summary>
+        <description>
+Fork of Adulthideout by Vashiel https://github.com/Vashiel/repository.adulthideout to focus on [COLOR red]GAY XXX Porn[COLOR white] Videos.
+[COLOR red][B]WARNING:[/B] 
+[COLOR red]Only for adults[/COLOR]		
+		</description>
+		<disclaimer>ADULTS ONLY - XXX CONTENT
+		</disclaimer>	
+		<platform>all</platform>
+		<license>http://www.gnu.org/licenses/</license>
+		<forum></forum>
+		<website>http://github.com/moedje/kodi-repo-gaymods</website>    
+		<email></email>
+		<mainsource>http://github.com/moedje/kodi-repo-gaymods</mainsource>    
+		<source>http://github.com/moedje/kodi-repo-gaymods/plugin.video.gayhideout/</source> 
+    </extension>
+</addon>

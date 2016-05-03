@@ -111,6 +111,14 @@ else: addon.setSetting('pdsection', '0')
 ```
 This is where I haven't gotten past yet, need to handle anywhere pdsection is checked to now handle the gay option of 2 with the correct gay url's and parameters. 
 
+## FUTURE CODE TO LOOK AT
+- http://blog.tvalacarta.info/plugin-xbmc/pelisalacarta
+- Filesmonster_catalogue.py Uses a site with 5 gay categories that are hosted on Filesmonster.
+	- http://filesmonster.filesdl.net/posts/category/27/gay-full-length-films
+	- http://filesmonster.filesdl.net/posts/category/29/gays
+- gaypornshare.py another module found in the same addon for TV viewing but that I can't manage to get to even start yet.
+	- http://gaypornshare.org/page/1/
+
 ## ABOUT ME
 - Author: Jeremy j@alljer.com
 - Founder: [CryptoCoins.Com](http://www.cryptocoins.com/) Physical CryptoCurrency Worth Holding Onto

@@ -2,8 +2,8 @@
 <addons>
 <addon id="plugin.video.dagay"
        name="DaGay"
-       version="1.1.2"
-       provider-name="moedje">
+       version="2.0.0"
+       provider-name="kodi-repo-gaymods">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
     </requires>
@@ -12,7 +12,7 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>Dagay.com/Deviantclip Porn Videos (Adult 18+)</summary>
+        <summary>Gaymods Repo Dagay.com/Deviantclip Porn Videos (Adult 18+)</summary>
         <description>DaGay has Gay Porn or Deviantclip has Str8 set which you want in settings. Modified from the
             plugin.video.dclip will combine the 6 pages of video results into one result screen and set Thumbs view
         </description>
@@ -37,7 +37,7 @@
 
 <addon id="plugin.video.gayboystube"
        name="GayBoysTube"
-       version="0.0.3"
+       version="0.0.4"
        provider-name="moedje">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -47,20 +47,46 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>Watch videos from gayboystube.com</summary>
+        <summary>Gaymod Fork Watch videos from gayboystube.com</summary>
         <description>Amateur and professional gay porn.forked: antigenx adding categories search still bugs
         </description>
         <platform>all</platform>
     </extension>
 </addon>
 
+<addon id="plugin.video.GayHideout" name="GayHideout" version="1.4.7" provider-name="kodi-repo-gaymods">
+    <requires>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>[COLOR red]GAY XXX[/COLOR] Porn (adulthideout fork)</summary>
+        <description>
+Fork of Adulthideout by Vashiel https://github.com/Vashiel/repository.adulthideout to focus on [COLOR red]GAY XXX Porn[COLOR white] Videos.
+[COLOR red][B]WARNING:[/B]
+[COLOR red]Only for adults[/COLOR]
+		</description>
+		<disclaimer>ADULTS ONLY - XXX CONTENT
+		</disclaimer>
+		<platform>all</platform>
+		<license>http://www.gnu.org/licenses/</license>
+		<forum></forum>
+		<website>http://github.com/moedje/kodi-repo-gaymods</website>
+		<email></email>
+		<mainsource>http://github.com/moedje/kodi-repo-gaymods</mainsource>
+		<source>http://github.com/moedje/kodi-repo-gaymods/plugin.video.gayhideout/</source>
+    </extension>
+</addon>
+
 <addon id="plugin.video.gaypornium"
        name="Gaypornium"
-       version="0.0.1"
-       provider-name="antigenx">
+       version="0.0.2"
+       provider-name="moedje">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.beautifulsoup" version="3.0.8" />
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="addon.py">
@@ -75,7 +101,7 @@
 
 <addon id="plugin.video.gayuwc"
        name="Gay Ultimate Whitecream"
-       version="1.0.95"
+       version="2.0.95"
        provider-name="moedje">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -95,14 +121,17 @@
 
 <addon id="plugin.video.largecamtube"
 	   name="largecamtube"
-	   version="1.2.2"
+	   version="2.0.0"
 	   provider-name="moedje">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
   <extension point="xbmc.python.pluginsource"
 			 library="default.py">
     	<provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>Adult(18+) Gay videos from largecamtube.com</summary>
+    <summary>Forked to gaymods Adult(18+) Gay videos from largecamtube.com</summary>
     <description>Adult(18+) videos from largecamtube.com</description>
     <platform>all</platform>
   </extension>

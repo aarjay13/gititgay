@@ -1,0 +1,80 @@
+v 1.4.7 03-05-2016
+- Hardfork of plugin.video.adulthideout to specify gay specific URL's of the sites already here
+
+v 0.4.7 30-04-2016
+- fixes lubetube.com categories
+- added lubetube.com pornstars
+- fixed zbporn.com
+- fixed pornhd.com categories
+- changed fantasti.cc regex to load faster
+- added yespornplease.com (jump forward does not work)
+- minor changes
+
+
+
+v 0.4.6 19-04-2016
+- changed PornHD to play 720p videos by default
+- removed gotporn (adulthideout can't handle cookies)
+- removed tnaflix
+- added txxx.com
+- added upornia.com
+- added fantasti.cc (very experimental)
+- changed pornsocket.com to filter pictures
+
+
+v 0.4.5 23-03-2016
+- fixed Empflix.com (now it should work)
+
+v 0.4.4 22-03-2016
+- added Empflix.com
+- added ranking sub for xhamster.com
+- fixed change content for xhamster.com
+- fixed search for youporn.com
+- added sorting sub for youporn.com
+- changed motherless.com regex
+- lots of minor changes
+- code cleaning
+
+
+v 0.4.3 13-03-2016
+- added gotporn.com
+- added categories and pornstars subs for xvideos.com
+- fixed search for xvideos.com 
+- added categories for yes.xxx
+- added categories for tubepornclassic.com 
+- added categories for pornxs.com
+- added logo for pornsocket.com
+- code reorginized and minor fixes
+
+v 0.4.2 05-03-2016
+- removed Jamo.tv
+- added Jav720p.net
+- fixed motherless.com group names 
+- fixed redtube.com search and channels
+- removed trash code 
+
+v 0.4.1 13-02-2016
+- removed FlyFLV
+- Minor fixes
+
+v 0.4 08-02-2016
+- added heavy-r.com
+- fixed ashemaletube categories
+
+v 0.3 08-02-2016
+- added Youporn
+- added Hentaigasm
+- added AShemaletube
+- changed fanart.jpg
+- rewrote youjizz code
+- rewrote flyFLV code
+- rewrote efukt code
+- rewrote pornXS code
+- removed crazyshit.com
+- many other minor changes in code (Changed code so much, maybe it's more messed up then before)
+
+v 0.2
+- added Jamo.tv
+
+v 0.1
+First try
