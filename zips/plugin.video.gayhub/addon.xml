@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.gayhub" name="GayHub" version="0.0.1" provider-name="kodi-repo-gaymods">
+    <requires>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="hub.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>[COLOR red]GAY XXX[/COLOR] Porn from Hub Affiliates</summary>
+        <description>
+Attempts to grab content from the Hub Traffice network of sites, PornHub, Spankwire, Tube8, GayTube, XTube, RedTube, and YouPorn. It uses the API's rather than scraping methods to present these results. It is focused on the sites that have gay 'segments' or at least a gay category.
+[COLOR red][B]WARNING:[/B] 
+[COLOR red]Only for adults[/COLOR]		
+		</description>
+		<disclaimer>ADULTS ONLY - XXX CONTENT
+		</disclaimer>	
+		<platform>all</platform>
+		<license>http://www.gnu.org/licenses/</license>
+		<forum></forum>
+		<website>http://github.com/moedje/kodi-repo-gaymods</website>    
+		<email></email>
+		<mainsource>http://github.com/moedje/kodi-repo-gaymods</mainsource>    
+		<source>http://github.com/moedje/kodi-repo-gaymods/plugin.video.gayhub/</source>
+    </extension>
+</addon>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.hubgay" name="HubGAY" version="0.0.1" provider-name="kodi-repo-gaymods">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0"/>
+        <import addon="script.module.kodiswift" version="0.0.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en</language>
+        <summary>[COLOR red]GAY XXX[/COLOR] Porn from Hub Affiliates</summary>
+        <description>
+            Attempts to grab content from the Hub Traffice network of sites, PornHub, Spankwire, Tube8, GayTube, XTube,
+            RedTube, and YouPorn. It uses the API's rather than scraping methods to present these results. It is focused
+            on the sites that have gay 'segments' or at least a gay category.
+            [COLOR red][B]WARNING:[/B]
+            [COLOR red]Only for adults[/COLOR]
+        </description>
+        <disclaimer>ADULTS ONLY - XXX CONTENT
+        </disclaimer>
+    </extension>
+</addon>
