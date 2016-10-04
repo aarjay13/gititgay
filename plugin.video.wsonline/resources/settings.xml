@@ -1,0 +1,9 @@
+<settings>
+    <category label="General">
+        <setting id="lastsearch" label="Last Search" values="" default="" type="text" visible="true"/>
+        <setting id="viewmode" label="Set View $INFO[Container.Viewmode]" values="500" default="500" type="number"
+                 visible="true"/>
+        <setting id="downloadpath" label="Download Path" values="" default="" type="folder" visible="true"/>
+        <setting id="debugon" label="DEBUG MODE ON" values="false" default="false" type="bool" visible="true"/>
+    </category>
+</settings>
